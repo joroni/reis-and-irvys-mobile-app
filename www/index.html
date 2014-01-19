@@ -3,22 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
-    <title>DrupalGap</title>
-    <link rel="stylesheet" href="jquery.mobile-1.0b2.min.css" />
+    <title>Reis & Irvy's</title>
+     <link rel="stylesheet" href="custom.css" /> 
+     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+ <link rel="stylesheet" href="jquery-mobile-froyo-rni.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile.structure-1.4.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+				
+  
+  <!--  
     <link rel="stylesheet" href="drupalgap.css" />
-    <script type="text/javascript" src="jquery-1.6.2.min.js"></script>
-    <script type="text/javascript" src="jquery.mobile-1.0b2.min.js"></script>
-    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+      <link rel="stylesheet" href="jquery.mobile-1.0b2.min.css" />
+  <script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+   <script type="text/javascript" src="jquery.mobile-1.0b2.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>-->
     <script type="text/javascript" src="base.js"></script>
   </head>
   <body onload="onBodyLoad()">
     
     <!-- Start of loading page -->
     <div data-role="page" id="loading">
-      <div data-role="header" data-id="bhead" data-theme="e">
+      <div data-role="header" data-id="bhead" data-theme="a">
         <h1>Loading</h1>
-        <a href="#home" data-icon="home" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
-        <a href="#info" data-icon="info" class="ui-btn-right">Info</a>
+       <a class="ui-btn-left ui-btn ui-icon-bullets ui-btn-icon-notext ui-btn-inline" href="#home" data-role="button" role="button">Home</a> 
+       <a class="ui-btn-right ui-btn ui-icon-info ui-btn-icon-notext ui-btn-inline" href="#info" data-role="button" role="button">Info</a> 
+        <!--<a href="#home" data-icon="home" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
+        <a href="#info" data-icon="info" class="ui-btn-right">Info</a>-->
       </div>
       <!-- /header -->
       <div data-role="content">
@@ -32,7 +43,7 @@
         </div>
       </div>
       <!-- /content -->
-      <div data-role="footer" data-position="fixed" data-id="bfoot" class="ui-bar" data-theme="e">
+      <div data-role="footer" data-position="fixed" data-id="bfoot" class="ui-bar" data-theme="a">
         <a href="#settings" data-icon="gear" class="ui-btn-right">Settings</a>
         <a id="footout" href="#login" data-role="button" data-icon="delete">Account</a>
       </div>
@@ -42,10 +53,12 @@
     
     <!-- Start of home page -->
     <div data-role="page" id="home">
-      <div data-role="header" data-position="fixed" data-id="bhead" data-theme="e">
+      <div data-role="header" data-position="fixed" data-id="bhead" data-theme="a">
         <h1>Home</h1>
-        <a href="#home" data-icon="home" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
-        <a href="#info" data-icon="info" class="ui-btn-right">Info</a>
+        <a class="ui-btn-left ui-btn ui-icon-bullets ui-btn-icon-notext ui-btn-inline" href="#home" data-role="button" role="button">Home</a> 
+       <a class="ui-btn-right ui-btn ui-icon-info ui-btn-icon-notext ui-btn-inline" href="#info" data-role="button" role="button">Info</a> 
+     <!--   <a href="#home" data-icon="home" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
+        <a href="#info" data-icon="info" class="ui-btn-right">Info</a>-->
       </div>
       <!-- /header -->
       <div data-role="content" class="ui-content">
@@ -53,7 +66,7 @@
           <p>
             Welcome to adappt.co.uk DrupalGap. You can find upload content to your Drupal site and Downlaod the latest content.
           </p>
-          <ul data-role="listview" data-inset="true" data-theme="e">
+          <ul data-role="listview" data-inset="true" data-theme="a">
             <li>
               <a onClick="how();">Getting started</a>
             </li>
@@ -67,7 +80,7 @@
         </div>
       </div>
       <!-- /content -->
-      <div data-role="footer" data-position="fixed" data-id="bfoot" class="ui-bar" data-theme="e">
+      <div data-role="footer" data-position="fixed" data-id="bfoot" class="ui-bar" data-theme="a">
         <a href="#settings" data-icon="gear" class="ui-btn-right">Settings</a>
         
         <a id="footout" href="#login" data-role="button" data-icon="delete">Account</a>
@@ -78,10 +91,12 @@
     
     <!-- Start of How It Works page -->
     <div data-role="page" id="howitworks">
-      <div data-role="header" data-id="bhead" data-theme="e">
+      <div data-role="header" data-id="bhead" data-theme="a">
         <h1>How It Works</h1>
-        <a href="#home" data-icon="home" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
-        <a href="#info" data-icon="info" class="ui-btn-right">Info</a>
+          <a class="ui-btn-left ui-btn ui-icon-bullets ui-btn-icon-notext ui-btn-inline" href="#home" data-role="button" role="button">Home</a> 
+       <a class="ui-btn-right ui-btn ui-icon-info ui-btn-icon-notext ui-btn-inline" href="#info" data-role="button" role="button">Info</a> 
+    <!--    <a href="#home" data-icon="home" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
+        <a href="#info" data-icon="info" class="ui-btn-right">Info</a>-->
       </div>
       <!-- /header -->
       <div data-role="content">
@@ -114,7 +129,7 @@
         </div>
       </div>
       <!-- /content -->
-      <div data-role="footer" data-position="fixed" data-id="bfoot" class="ui-bar" data-theme="e">
+      <div data-role="footer" data-position="fixed" data-id="bfoot" class="ui-bar" data-theme="a">
         <a href="#settings" data-icon="gear" class="ui-btn-right">Settings</a>
         
         <a id="footout" href="#login" data-role="button" data-icon="delete">Account</a>
@@ -125,7 +140,7 @@
     
     <!-- Start of Login page -->
     <div data-role="page" id="login">
-      <div data-role="header" data-id="bhead" data-theme="e">
+      <div data-role="header" data-id="bhead" data-theme="a">
         <h1>Login to Drupal</h1>
         <a href="#home" data-icon="home" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
         <a href="#info" data-icon="info" class="ui-btn-right">Info</a>
@@ -147,12 +162,12 @@
           <div id="logmsg">
           </div>
           <p>
-            <a data-role="button" onclick="saveLogin();" data-theme="e">Login</a>
+            <a data-role="button" onclick="saveLogin();" data-theme="a">Login</a>
           </p>
         </div>
       </div>
       <!-- /content -->
-      <div data-role="footer" data-position="fixed" data-id="bfoot" class="ui-bar" data-theme="e">
+      <div data-role="footer" data-position="fixed" data-id="bfoot" class="ui-bar" data-theme="a">
         <a href="#settings" data-icon="gear" class="ui-btn-right">Settings</a>
         
         <a id="footout" href="#login" data-role="button" data-icon="delete">Account</a>
@@ -164,16 +179,18 @@
   
     <!-- Start of articles page -->
     <div data-role="page" id="stories">
-      <div data-role="header" data-id="bhead" data-theme="e">
+      <div data-role="header" data-id="bhead" data-theme="a">
         <h1>Latest Articles</h1>
-        <a href="#home" data-icon="home" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
-        <a href="#info" data-icon="info" class="ui-btn-right">Info</a>
+        <a class="ui-btn-left ui-btn ui-icon-bullets ui-btn-icon-notext ui-btn-inline" href="#home" data-role="button" role="button">Home</a> 
+       <a class="ui-btn-right ui-btn ui-icon-info ui-btn-icon-notext ui-btn-inline" href="#info" data-role="button" role="button">Info</a> 
+       <!-- <a href="#home" data-icon="home" data-direction="reverse" class="ui-btn-left jqm-home  ui-icon-home ui-btn-icon-notext">Home</a>
+        <a href="#info" data-icon="info" class="ui-btn-right">Info</a>-->
       </div>
       <!-- /header -->
       <div id = "latestlist" data-role="content">
       </div>
       <!-- /content -->
-      <div data-role="footer" data-position="fixed" data-id="bfoot" class="ui-bar" data-theme="e">
+      <div data-role="footer" data-position="fixed" data-id="bfoot" class="ui-bar" data-theme="a">
         <a href="#settings" data-icon="gear" class="ui-btn-right">Settings</a>
         <a id="footout" onMouseDown="Account();" data-role="button" data-icon="delete">Account</a>
       </div>
@@ -183,10 +200,12 @@
     
     <!-- Start of add Articles page -->
     <div data-role="page" id="addstory">
-      <div data-role="header" data-id="bhead" data-theme="e">
+      <div data-role="header" data-id="bhead" data-theme="a">
         <h1>Add Article</h1>
-        <a href="#home" data-icon="home" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
-        <a href="#info" data-icon="info" class="ui-btn-right">Info</a>
+        <a class="ui-btn-left ui-btn ui-icon-bullets ui-btn-icon-notext ui-btn-inline" href="#home" data-role="button" role="button">Home</a> 
+       <a class="ui-btn-right ui-btn ui-icon-info ui-btn-icon-notext ui-btn-inline" href="#info" data-role="button" role="button">Info</a> 
+       <!-- <a href="#home" data-icon="home" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
+        <a href="#info" data-icon="info" class="ui-btn-right">Info</a>-->
       </div>
       <!-- /header -->
       <div id = "addstorydiv" data-role="content">
@@ -200,12 +219,12 @@
         <div id="result">
         </div>
         <br />
-        <div id="addcontrol" data-role="controlgroup" data-type="horizontal" data-theme="e">
-        </a><a data-role="button" data-theme="e" onclick="sendStory();"/>Send
+        <div id="addcontrol" data-role="controlgroup" data-type="horizontal" data-theme="a">
+        </a><a data-role="button" data-theme="a" onclick="sendStory();"/>Send
       </a>
     </div>
     </div><!-- /content -->
-    <div data-role="footer" data-position="fixed" data-id="bfoot" data-theme="e">
+    <div data-role="footer" data-position="fixed" data-id="bfoot" data-theme="a">
       <h4>DrupalGap</h4>
     </div>
     <!-- /footer -->
@@ -214,10 +233,12 @@
   
   <!-- Start of info page -->
   <div data-role="page" id="info">
-    <div data-role="header" data-id="bhead" data-theme="e">
+    <div data-role="header" data-id="bhead" data-theme="a">
       <h1>Info</h1>
-      <a href="#home" data-icon="home" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
-      <a href="#info" data-icon="info" class="ui-btn-right">Info</a>
+      <a class="ui-btn-left ui-btn ui-icon-bullets ui-btn-icon-notext ui-btn-inline" href="#home" data-role="button" role="button">Home</a> 
+       <a class="ui-btn-right ui-btn ui-icon-info ui-btn-icon-notext ui-btn-inline" href="#info" data-role="button" role="button">Info</a> 
+   <!--   <a href="#home" data-icon="home" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
+      <a href="#info" data-icon="info" class="ui-btn-right">Info</a>-->
     </div>
     <!-- /header -->
     <div data-role="content">
@@ -235,7 +256,7 @@
       </div>
     </div>
     <!-- /content -->
-    <div data-role="footer" data-position="fixed" data-id="bfoot" class="ui-bar" data-theme="e">
+    <div data-role="footer" data-position="fixed" data-id="bfoot" class="ui-bar" data-theme="a">
       <a href="#settings" data-icon="gear" class="ui-btn-right">Settings</a>
       
       <a id="footout" href="#login" data-role="button" data-icon="delete">Account</a>
@@ -246,10 +267,12 @@
   
   <!-- Start of settings page -->
   <div data-role="page" id="settings">
-    <div data-role="header" data-id="bhead" data-theme="e">
+    <div data-role="header" data-id="bhead" data-theme="a">
       <h1>Settings</h1>
-      <a href="#home" data-icon="home" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
-      <a href="#info" data-icon="info" class="ui-btn-right">Info</a>
+      <a class="ui-btn-left ui-btn ui-icon-bullets ui-btn-icon-notext ui-btn-inline" href="#home" data-role="button" role="button">Home</a> 
+       <a class="ui-btn-right ui-btn ui-icon-info ui-btn-icon-notext ui-btn-inline" href="#info" data-role="button" role="button">Info</a> 
+<!--      <a href="#home" data-icon="home" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
+      <a href="#info" data-icon="info" class="ui-btn-right">Info</a>-->
     </div>
     <!-- /header -->
     <div data-role="content">
@@ -271,7 +294,7 @@
         <input id="display" type="text">
             </input>
         <br/>
-        <a data-role="button" data-theme="e" onclick="saveSettings();">Save settings</a>
+        <a data-role="button" data-theme="a" onclick="saveSettings();">Save settings</a>
       </div>
     </div>
     <!-- /content -->
@@ -281,10 +304,12 @@
   
   <!-- Start of sending page -->
   <div data-role="page" id="sending">
-    <div data-role="header" data-id="bhead" data-theme="e">
+    <div data-role="header" data-id="bhead" data-theme="a">
       <h1>Sending Story</h1>
-      <a href="#home" data-icon="home" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
-      <a href="#info" data-icon="info" class="ui-btn-right">Info</a>
+      <a class="ui-btn-left ui-btn ui-icon-bullets ui-btn-icon-notext ui-btn-inline" href="#home" data-role="button" role="button">Home</a> 
+       <a class="ui-btn-right ui-btn ui-icon-info ui-btn-icon-notext ui-btn-inline" href="#info" data-role="button" role="button">Info</a> 
+      <!--<a href="#home" data-icon="home" data-direction="reverse" class="ui-btn-left jqm-home">Home</a>
+      <a href="#info" data-icon="info" class="ui-btn-right">Info</a>-->
     </div>
     <!-- /header -->
     <div data-role="content">
@@ -298,7 +323,7 @@
       </div>
     </div>
     <!-- /content -->
-    <div data-role="footer" data-position="fixed" data-id="bfoot" class="ui-bar" data-theme="e">
+    <div data-role="footer" data-position="fixed" data-id="bfoot" class="ui-bar" data-theme="a">
       <a href="#settings" data-icon="gear" class="ui-btn-right">Settings</a>
       <a id="footout" href="#login" data-role="button" data-icon="delete">Account</a>
     </div>
