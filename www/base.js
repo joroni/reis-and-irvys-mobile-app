@@ -1,5 +1,5 @@
 var baseurl = "http://m.reisandirvys.com";
-var nextpage = "#home";
+var nextpage = "#login";
 
 /* When this function is called, the phone has been initialized and is ready to roll */
 function onDeviceReady() {
