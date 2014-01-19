@@ -29,11 +29,13 @@ function onDeviceReady() {
 	};
 
 	if (view) {
-		$("#view").val(view);
+	//	$("#view").val(view);
+		$("#view").val(frontpage);
 	};
 
 	if (display) {
-		$("#display").val(display);
+		//$("#display").val(display);
+		$("#display").val(poll);
 	};
 
 	if (localStorage.localLogin == 3) {
@@ -48,11 +50,19 @@ function onDeviceReady() {
 
 }
 
-function saveSettings() {
+/*function saveSettings() {
 	baseurl = $("#baseurl").val();
 	localStorage.baseUrl = baseurl;
 	localStorage.view = $("#view").val();
 	localStorage.display = $("#display").val();
+	alert("settings saved");
+}*/
+
+function saveSettings() {
+	baseurl = $("#baseurl").val();
+	localStorage.baseUrl = baseurl;
+	localStorage.view = $("#view").val(frontpage);
+	localStorage.display = $("#display").val(poll);
 	alert("settings saved");
 }
 
