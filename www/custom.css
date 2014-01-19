@@ -26,6 +26,14 @@ h2.block__title {
 	display:none;
 }
 
+.ui-header,.ui-footer{
+	border-width:0px 0 !important;
+}
+	
+	.ui-header:empty,.ui-footer:empty{
+		min-height:2.6875em;
+		}
+
 /*.ui-icon-loading {
     background: url('/images/ajax-loader.gif') repeat scroll 0 0 / 2.875em 2.875em rgba(0, 0, 0, 0) !important;
 }
