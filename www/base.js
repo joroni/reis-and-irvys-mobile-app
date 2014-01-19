@@ -1,5 +1,7 @@
 var baseurl = "http://m.reisandirvys.com";
 var nextpage = "#login";
+var view = "frontpage";
+var display = "poll";
 
 /* When this function is called, the phone has been initialized and is ready to roll */
 function onDeviceReady() {
@@ -29,13 +31,11 @@ function onDeviceReady() {
 	};
 
 	if (view) {
-	//	$("#view").val(view);
-		$("#view").val(frontpage);
+		$("#view").val(view);
 	};
 
 	if (display) {
-		//$("#display").val(display);
-		$("#display").val(poll);
+		$("#display").val(display);
 	};
 
 	if (localStorage.localLogin == 3) {
@@ -50,19 +50,11 @@ function onDeviceReady() {
 
 }
 
-/*function saveSettings() {
+function saveSettings() {
 	baseurl = $("#baseurl").val();
 	localStorage.baseUrl = baseurl;
 	localStorage.view = $("#view").val();
 	localStorage.display = $("#display").val();
-	alert("settings saved");
-}*/
-
-function saveSettings() {
-	baseurl = $("#baseurl").val();
-	localStorage.baseUrl = baseurl;
-	localStorage.view = $("#view").val(frontpage);
-	localStorage.display = $("#display").val(poll);
 	alert("settings saved");
 }
 
