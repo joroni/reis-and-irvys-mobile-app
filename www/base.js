@@ -1,10 +1,14 @@
-var baseurl = "http://m.reisandirvys.com";
+var baseurl = 'http://m.reisandirvys.com';
 
-var nextpage = "#login";
+var nextpage = '#login';
 
-var view = "frontpage";
+var view = 'frontpage';
 
-var display = "poll";
+var display = 'poll';
+
+
+
+
 
 
 
@@ -13,6 +17,14 @@ var display = "poll";
 function onDeviceReady() {
 
 
+
+/*baseurl = 'http://m.reisandirvys.com';
+
+nextpage = '#login';
+
+view = 'frontpage';
+
+display = 'poll';*/
 
 	username = localStorage.phonegapName;
 
@@ -34,6 +46,7 @@ function onDeviceReady() {
 
 	if (baseurl) {
 
+		//$("#baseurl").val(baseurl);
 		$("#baseurl").val(baseurl);
 
 	}
